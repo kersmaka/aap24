@@ -1,7 +1,4 @@
 # This is the AAP enterprise installer inventory file
-# Please consult the docs if you're unsure what to add
-# For all optional variables please consult the Red Hat documentation:
-# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation
 
 # This section is for your AAP Gateway host(s)
 # -----------------------------------------------------
