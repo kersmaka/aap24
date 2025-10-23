@@ -76,4 +76,4 @@ automationhub_pg_password='redhat'
 
 # AAP EDA Controller
 # https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars#event-driven-ansible-controller
-# -----------------------------------------------------
+# -----------------------------------------------------#
