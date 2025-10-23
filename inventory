@@ -70,6 +70,7 @@ automationhub_pg_password=redhat
 automationhub_ssl_verify=False
 automationhub_api_ssl_verify=False
 content_ssl_verify=False
+automationgateway_validate_certs=False
 
 # AAP EDA Controller
 # -----------------------------------------------------#
