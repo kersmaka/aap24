@@ -7,7 +7,6 @@
 # -----------------------------------------------------
 [automationgateway]
 192.168.0.236 routable_hostname=192.168.0.236
-#192.168.0.236 _component=controller <--- was told to remove this line "tells the installer to treat the gateway node as a controller, so it never actually installed the gateway service"
 
 # This section is for your AAP Controller host(s)
 # -----------------------------------------------------
@@ -35,42 +34,36 @@ peers=execution_nodes
 redis_mode= standalone
 
 # Common variables
-# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars#ref-general-inventory-variables
 # -----------------------------------------------------
 
 # AAP Gateway
-# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars#ref-gateway-variables
 # -----------------------------------------------------
 automationgateway_enabled=true
 automationgateway_ui_hostname=192.168.0.236
-#_automationgateway_main_url=https://192.168.0.236  <-- was told to comment these out as they're causing "aap-gateway-manage migrate" to fail
-#_automationgateway_main_scheme=https               <-- was told to comment these out as they're causing "aap-gateway-manage migrate" to fail
-#_automationgateway_main_netloc=192.168.0.236       <-- was told to comment these out as they're causing "aap-gateway-manage migrate" to fail
-automationgateway_admin_password=redhat # <--- now I am being told to uncomment these as they're required for the installer to deploy the gateway
-automationgateway_pg_host=192.168.0.47  # <--- now I am being told to uncomment these as they're required for the installer to deploy the gateway
-automationgateway_pg_database=gatewaydb # changed this to lowercase, was gatewayDB
-automationgateway_pg_username=gateway # changed this to gateway, was admin
+automationgateway_admin_password=redhat 
+automationgateway_pg_host=192.168.0.47  
+automationgateway_pg_database=gatewaydb 
+automationgateway_pg_username=gateway 
 automationgateway_pg_password=redhat
 
 # AAP Controller
-# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars#ref-controller-variables
 # -----------------------------------------------------
 admin_password=redhat
 pg_host=192.168.0.47
-pg_database=awx # removed single quotes
-pg_username=awx # removed single quotes
+pg_database=awx 
+pg_username=awx 
 pg_password=redhat
 
 # AAP Automation Hub
-# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars#ref-hub-variables
 # -----------------------------------------------------
 
 automationhub_enabled=true
 automationhub_admin_password=redhat
 automationhub_pg_host=192.168.0.47
-automationhub_pg_database=automationhub # removed single quotes
-automationhub_pg_username=automationhub # removed single quotes
-automationhub_pg_password=redhat # removed single quotes
+automationhub_pg_database=automationhub 
+automationhub_pg_username=automationhub 
+automationhub_pg_password=redhat 
+
 
 
 # SSL verification controls
@@ -79,5 +72,4 @@ automationhub_api_ssl_verify=False
 content_ssl_verify=False
 
 # AAP EDA Controller
-# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/rpm_installation/appendix-inventory-files-vars#event-driven-ansible-controller
 # -----------------------------------------------------#
