@@ -23,7 +23,7 @@ peers=execution_nodes
 # This section is for your AAP Automation Hub host(s)
 # -----------------------------------------------------
 [automationhub]
-192.168.0.88 routable_hostname=192.168.0.88 _component=automationhub
+192.168.0.88 routable_hostname=192.168.0.88
 
 # This section is for your AAP EDA Controller host(s)
 # -----------------------------------------------------
