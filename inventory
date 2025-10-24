@@ -72,7 +72,6 @@ automationhub_pg_username=automationhub
 automationhub_pg_password=redhat 
 
 
-
 # SSL verification controls
 automationhub_ssl_verify=False
 automationhub_api_ssl_verify=False
