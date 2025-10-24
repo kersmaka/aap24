@@ -50,6 +50,8 @@ automationgateway_pg_password=redhat
 automationgateway_controller_api_url=https://192.168.0.145
 automationgateway_ui_port=8050
 controller_gateway_url=https://192.168.0.236
+controller_hostname=192.168.0.145
+controller_api_url=https://192.168.0.145
 
 
 
