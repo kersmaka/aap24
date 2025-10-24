@@ -13,6 +13,11 @@
 [automationcontroller:vars]
 peers=execution_nodes
 
+# This section is for your shared PostgreSQL database host(s)
+# -----------------------------------------------------
+[database]
+192.168.0.47 routable_hostname=192.168.0.47
+
 # This section is for your AAP Execution host(s)
 # -----------------------------------------------------
 [execution_nodes]
@@ -82,3 +87,4 @@ awx_validate_certs=False
 
 # AAP EDA Controller
 # -----------------------------------------------------#
+
